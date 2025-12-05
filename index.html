@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Interacted</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <button class="nav-btn" onclick="showPage('home')">Home</button>
+            <button class="nav-btn" onclick="showPage('about')">About me</button>
+            <button class="nav-btn" onclick="showPage('projects')">Projects</button>
+        </div>
+    </nav>
+
+    <!-- Pages Container -->
+    <div class="pages-container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="page-content">
+                <h1>Welcome to My Website</h1>
+                <div class="work-in-progress">
+                    <p>🚧 This website is currently a Work in Progress 🚧</p>
+                </div>
+                <p>This site is under construction. Come back soon for updates!</p>
+            </div>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <div class="page-content">
+                <h1>About Me</h1>
+                <p>Hi, I'm Crash Interacted! I make things sometimes. This page is also a work in progress if you could'nt tell</progress> </p>
+            </div>
+        </div>
+
+        <!-- Projects Page -->
+        <div id="projects" class="page">
+            <div class="page-content">
+                <h1>Projects</h1>
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Detail Page -->
+        <div id="project-detail" class="page">
+            <div class="page-content">
+                <button class="back-btn" onclick="showPage('projects')">← Back to Projects</button>
+                <img id="projectImage" src="" alt="Project image" class="project-detail-image">
+                <h1 id="projectTitle"></h1>
+                <p id="projectDescription"></p>
+                <a id="projectLink" href="" target="_blank" class="project-url-link">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
