@@ -68,7 +68,8 @@ canvas {
 }
 
 .button,
-.button-secret {
+.button-secret,
+.button-scary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -93,7 +94,15 @@ canvas {
     filter: blur(1px);
 }
 
+.button-scary {
+    border: 2px solid rgb(200, 0, 0);
+    color: #e2e8f0;
+    background: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .button:hover,
-.button-secret:hover {
+.button-secret:hover,
+.button-scary:hover {
     transform: translateY(-2px);
 }
